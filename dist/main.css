@@ -1,0 +1,226 @@
+/*
+    Sass code
+
+
+
+.quiz-item {
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    &__question {
+      background-color: #00BFFF;
+      color: #fff;
+    }
+
+    &__options {
+
+      &__ctn {
+        position: relative;
+      }
+
+      &__icon {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:hover {
+         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+}
+
+
+
+.display-t {
+    display: table !important;
+    width: 100% !important;
+}
+
+.display-tr {
+    display: table-row !important;
+}
+
+.display-td {
+    display: table-cell !important;
+
+&--vm {
+     vertical-align: middle;
+ }
+
+&--vb {
+     vertical-align: bottom;
+ }
+
+&--vt {
+     vertical-align: top;
+ }
+}
+
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #f7f7f7;
+    text-align: center;
+}
+
+/*
+    utilities css
+*/
+
+.display-t {
+    display: table !important;
+    width: 100% !important;
+}
+
+.display-tr {
+    display: table-row !important;
+}
+
+.display-td {
+    display: table-cell !important;
+}
+.display-td--vm {
+    vertical-align: middle;
+}
+.display-td--vb {
+    vertical-align: bottom;
+}
+.display-td--vt {
+    vertical-align: top;
+}
+
+/*
+    Common classes
+*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #1dd845;
+    border-radius: 5px;
+    background-color: #1dd845;
+    background-image: none;
+    cursor: pointer;
+}
+
+
+@keyframes ripple-animation {
+    from {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+@keyframes card-animation {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card-animation {
+    animation: card-animation 2s;
+}
+
+
+.ripple {
+    overflow:hidden;
+    position: relative;
+}
+
+.ripple__effect::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+    animation: ripple-animation 3s;
+}
+
+.card {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.quiz-item__question {
+    padding: 40px;
+    font-size: 30px;
+    color: indigo;
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(to bottom,#dff0d8 0,#d0e9c6 100%);
+    background-repeat: repeat-x;
+}
+.quiz-item__options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #eee;
+}
+.quiz-item__options__item {
+    padding: 50px;
+}
+.quiz-item__options__ctn {
+    position: relative;
+}
+.quiz-item__options__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+    color: #fc8019;
+}
+.quiz-item:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+
+
+
+
+/*
+    Sass code
+
+
+
+.quiz-item {
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    &:hover {
+         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ }
+}
+
+*/
+

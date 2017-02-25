@@ -1,0 +1,32 @@
+quiz = [
+    {
+        id: 1,
+        text: 'Is Sachin Tendulkar a cricketer ? ',
+        options: [
+            {
+                id: 1,
+                text: 'Yes'
+            },
+            {
+                id: 2,
+                text: 'No'
+            },
+        ],
+        answerId: 1
+    },
+    {
+        id: 2,
+        text: 'Is Sania Mirza a cricketer ?',
+        options: [
+            {
+            id: 1,
+            text: 'Yes'
+            },
+            {
+            id: 2,
+            text: 'No'
+            }
+        ],
+        answerId: 2
+    }
+]
